@@ -118,7 +118,7 @@ if [[ -e $_arg_directory ]]; then
 fi
 
 if [[ -n $_arg_exclude ]]; then
-    exclude="-not -name *.$exclude"
+    exclude="-not -name *.$_arg_exclude"
 fi
 
 iter=0
@@ -137,7 +137,7 @@ while true; do
 
     elif [[  "$file_exec" =~ "ARJ archive data".*  ]] ; then
         
-        mv $file_name.arj && arj e $file_name.arj && rm $file_name.arj
+        mv $file_name $file_name.arj && arj e $file_name.arj && rm $file_name.arj
 
     elif [[  "$file_exec" =~ "PPMD archive data".*  ]] ; then
         
