@@ -127,7 +127,7 @@ while true; do
 
     iter=$((iter+1))
 
-    file_name="$(find . -not -type d $_arg_exclude)";
+    file_name="$(find . -not -type d $exclude)";
 
     file_exec="$(file -b $file_name)";
 
