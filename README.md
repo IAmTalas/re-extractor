@@ -13,18 +13,22 @@ Usage: ./extract.sh <filename> [-d|--directory <arg>] [-e|--exclude <arg>] [-h|-
         -h, --help: Prints help
 ```
 
+
 ### pre-requirements
 ``` bash
 $ sudo apt-get install ppmd kgb arj rzip bzip2 cabextract nomarch zoo
 ```
-Note: You may need to install ppmd and zoo packages manually.
+**Note**: You may need to install [ppmd](https://launchpad.net/ubuntu/utopic/+package/ppmd) and [zoo](https://debian.pkgs.org/9/debian-main-amd64/zoo_2.10-28_amd64.deb.html) packages manually.
+
+
 
 ### Examples
 
 As use cases, we can refer to 
 + [Tootsie Pop (H@cktivityCon CTF 2020)](https://ctftime.org/task/12577)
 + [Like 1000 (picoCTF 2019)](https://ctftime.org/task/9551)
----
++ [Can you find me? (cybertalents)](https://cybertalents.com/challenges/forensics/can-you-find-me)
+
 
 ##### Tootsie Pop (H@cktivityCon CTF 2020):
         
