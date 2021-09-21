@@ -1,5 +1,5 @@
 # re-extractor
-### Usage
+### Usages
 A simple script that extracts various types of compressions.
 
 Supported compressions :
@@ -19,7 +19,7 @@ $ sudo apt-get install ppmd kgb arj rzip bzip2 cabextract nomarch zoo
 ```
 Note: You may need to install ppmd and zoo packages manually.
 
-### Example
+### Examples
 
 As use cases, we can refer to 
 + [Tootsie Pop (H@cktivityCon CTF 2020)](https://ctftime.org/task/12577)
