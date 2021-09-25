@@ -188,7 +188,8 @@ while true; do
     else
         break
     fi
-	if [[ $? -ne 0 ]];then
+
+    if [[ $? -ne 0 ]];then
         printf "An error occurred when extracting : %s\nyou may have not installed requirements properly" "$file_name";
         exit 1;        
     fi
