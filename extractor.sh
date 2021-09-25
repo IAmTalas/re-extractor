@@ -125,7 +125,6 @@ iter=0
 
 while true; do
 
-    iter=$((iter+1))
 
     file_name="$(find . -not -type d $exclude)";
 
@@ -189,6 +188,13 @@ while true; do
     else
         break
     fi
+	if [[ $? -ne 0 ]];then
+        printf "An error occurred when extracting : %s\nyou may have not installed requirements properly" "$file_name";
+        exit 1;        
+    fi
+    
+    iter=$((iter+1))
+
 done
 
 printf "Finished after %d iterations" "$iter"
