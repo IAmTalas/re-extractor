@@ -12,17 +12,18 @@ Usage: ./extract.sh <filename> [-d|--directory <arg>] [-e|--exclude <arg>] [-h|-
         -e, --exclude: Exclude <FILE EXTENSION> from decompressing (empty by default)
         -h, --help: Prints help
 ```
+---
 
-
-### pre-requirements
+### Pre-requirements
 ``` bash
 $ sudo apt-get install ppmd kgb arj rzip bzip2 cabextract nomarch zoo
 ```
 **Note**: You may need to install [ppmd](https://launchpad.net/ubuntu/utopic/+package/ppmd) and [zoo](https://debian.pkgs.org/9/debian-main-amd64/zoo_2.10-28_amd64.deb.html) packages manually.
 
+---
 
 
-### Examples
+### use cases
 
 As use cases, we can refer to 
 + [Tootsie Pop (H@cktivityCon CTF 2020)](https://ctftime.org/task/12577)
@@ -30,7 +31,7 @@ As use cases, we can refer to
 + [Can you find me? (cybertalents)](https://cybertalents.com/challenges/forensics/can-you-find-me)
 
 
-##### Tootsie Pop (H@cktivityCon CTF 2020):
+#### Tootsie Pop (H@cktivityCon CTF 2020):
         
 Simply give the filename and output directory name.
 
@@ -39,9 +40,9 @@ $ ./extract.sh pop.zip -d output-dir/
 $ ls output-dir/
 filler.txt  flag.png
 ```
----
 
-##### Like 1000 (picoCTF 2019):
+
+#### Like 1000 (picoCTF 2019):
 
 Exclude option is for ignoring side files in extraction and preventing errors in decompressing them.
 
